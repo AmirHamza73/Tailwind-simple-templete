@@ -8,6 +8,8 @@
 
 <h2>Project Screenshots:</h2>
 
+<img src="img/bg.png" alt="project-screenshot" height="800/">
+
 <h2>🛠️ Installation Steps:</h2>
 
 <p>1. First install node modules</p>
