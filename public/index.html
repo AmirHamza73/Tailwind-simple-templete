@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output/tailwind.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+    <!-- top header -->
+    <header class="">
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-black shadow-xl h-16">
+            <a class="text-3xl font-bold leading-none" href="#">
+                <div class="text-white text-xl bg-green-600 w-16 p-3 h-12">Cryptop</div>
+            </a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul
+                class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-blue-600 font-bold" href="#">About Us</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Services</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Pricing</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
+            </ul>
+            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
+                href="#">Sign In</a>
+            <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+                href="#">Sign up</a>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <div class="text-black text-xl bg-green-600 w-16 p-3 h-12">Cryptop</div>
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Home</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">About Us</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Services</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Pricing</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl"
+                            href="#">Sign in</a>
+                        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
+                            href="#">Sign Up</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>Copyright © 2021</span>
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- slider -->
+    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="/slider-img/hotair1373167.jpg" alt="" class="w-full h-[400px] block">
+                </li>
+                <li class="splide__slide">
+                    <img src="/slider-img/action.jpg" alt="" class="w-full h-[400px] block">
+                </li>
+                <li class="splide__slide"><img src="/slider-img/krasivyi_korabl_-1024x768.jpg" alt=""
+                        class="w-full h-[400px] block"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- How it works ? -->
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold py-16">How it works ?</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+            <div class="w-full">
+                <div class="py-10 bg-[#f6f5f7] flex flex-col justify-center items-center hover:bg-[#30ae69]">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="50" height="50">
+                        <g>
+                            <path
+                                d="M426.674,216.389c-0.002-1.379-0.004-2.631-0.004-3.059C426.67,95.51,331.15,0,213.33,0C95.51,0,0,95.51,0,213.33   s95.51,213.34,213.33,213.34c0.321,0,1.527,0.001,3.058,0.003C242.249,477.32,294.917,512,355.688,512   C442.017,512,512,442.017,512,355.688C512,294.918,477.321,242.25,426.674,216.389z M312.565,198.33   c-1.021-31.76-5.29-61.603-12.102-88.021c17.098-4.457,34.222-10.236,51.219-17.272c25.82,29.599,41.23,66.198,44.375,105.293    M327.876,70.176c-12.086,4.518-24.203,8.335-36.289,11.434c-5.954-16.226-12.985-30.55-20.86-42.488   C291.374,45.902,310.688,56.37,327.876,70.176z M170.18,75.197c12.987-27.821,29.523-45.104,43.155-45.104   s30.168,17.283,43.156,45.104c1.876,4.02,3.658,8.231,5.352,12.597c-32.186,5.123-64.813,5.124-97.014,0   C166.522,83.428,168.303,79.217,170.18,75.197z M213.341,121.646c18.139,0,36.28-1.463,54.288-4.389   c1.152-0.187,2.306-0.39,3.46-0.589c6.475,24.82,10.438,52.799,11.458,81.662H144.124c1.019-28.864,4.982-56.845,11.458-81.665   c1.152,0.199,2.303,0.405,3.454,0.591C177.056,120.183,195.197,121.646,213.341,121.646z M155.945,39.119   c-7.877,11.939-14.909,26.266-20.864,42.494c-12.079-3.098-24.192-6.921-36.286-11.441   C115.981,56.366,135.297,45.897,155.945,39.119z M74.986,93.039c17.018,7.041,34.136,12.804,51.224,17.259   c-6.813,26.421-11.083,56.267-12.105,88.032H30.612C33.758,159.236,49.167,122.638,74.986,93.039z M30.612,228.33h83.501   c1.041,31.763,5.339,61.594,12.171,87.999c-0.001,0-0.003,0.001-0.004,0.001c-17.117,4.459-34.264,10.238-51.301,17.297   C49.165,304.022,33.758,267.423,30.612,228.33z M98.781,356.482c12.133-4.536,24.286-8.364,36.399-11.472   c0.003-0.001,0.006-0.001,0.009-0.002c5.997,16.291,13.073,30.673,21.009,42.623C135.448,380.853,116.042,370.35,98.781,356.482z    M155.65,309.96c-6.492-24.801-10.476-52.77-11.515-81.63l120.683,0.162c-26.274,18.804-46.479,45.544-57.11,76.719   c-15.447,0.469-34.298,1.859-48.668,4.189C157.91,309.58,156.78,309.77,155.65,309.96z M170.18,351.178   c-1.839-3.939-3.59-8.056-5.253-12.327c0.001,0,0.002,0,0.003,0c10.132-1.608,24.351-2.703,35.732-3.296   c-0.848,6.592-1.287,13.311-1.287,20.134c0,13.254,1.656,26.121,4.761,38.41C192.872,388.206,180.159,372.554,170.18,351.178z    M445.004,445.004C421.147,468.861,389.427,482,355.688,482s-65.459-13.139-89.316-36.996   c-23.857-23.857-36.996-55.577-36.996-89.316s13.139-65.459,36.996-89.316c23.857-23.857,55.577-36.996,89.316-36.996   s65.459,13.139,89.316,36.996C468.861,290.228,482,321.948,482,355.688S468.861,421.147,445.004,445.004z">
+                            </path>
+                            <path
+                                d="M378.022,340.686h-44.67c-4.032,0-7.439-3.407-7.439-7.439s3.407-7.439,7.439-7.439h67.109v-30h-29.704V281.26h-30.001   v14.548h-7.405c-20.645,0-37.439,16.795-37.439,37.439s16.795,37.439,37.439,37.439h44.67c4.032,0,7.439,3.407,7.439,7.439   s-3.407,7.439-7.44,7.439l-67.109,0.003l0.002,30l29.844-0.001v14.466h30v-14.467l7.264,0c20.645,0,37.439-16.795,37.439-37.439   S398.667,340.686,378.022,340.686z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold py-2">Traders and investors</h3>
+                <p class="font-bold text-[13px] text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut
+                    labore
+                    et
+                </p>
+            </div>
+            <div class="w-full">
+                <div class="py-10 bg-[#f6f5f7] flex flex-col justify-center items-center hover:bg-[#30ae69]">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="50" height="50">
+                        <g>
+                            <path
+                                d="M426.674,216.389c-0.002-1.379-0.004-2.631-0.004-3.059C426.67,95.51,331.15,0,213.33,0C95.51,0,0,95.51,0,213.33   s95.51,213.34,213.33,213.34c0.321,0,1.527,0.001,3.058,0.003C242.249,477.32,294.917,512,355.688,512   C442.017,512,512,442.017,512,355.688C512,294.918,477.321,242.25,426.674,216.389z M312.565,198.33   c-1.021-31.76-5.29-61.603-12.102-88.021c17.098-4.457,34.222-10.236,51.219-17.272c25.82,29.599,41.23,66.198,44.375,105.293    M327.876,70.176c-12.086,4.518-24.203,8.335-36.289,11.434c-5.954-16.226-12.985-30.55-20.86-42.488   C291.374,45.902,310.688,56.37,327.876,70.176z M170.18,75.197c12.987-27.821,29.523-45.104,43.155-45.104   s30.168,17.283,43.156,45.104c1.876,4.02,3.658,8.231,5.352,12.597c-32.186,5.123-64.813,5.124-97.014,0   C166.522,83.428,168.303,79.217,170.18,75.197z M213.341,121.646c18.139,0,36.28-1.463,54.288-4.389   c1.152-0.187,2.306-0.39,3.46-0.589c6.475,24.82,10.438,52.799,11.458,81.662H144.124c1.019-28.864,4.982-56.845,11.458-81.665   c1.152,0.199,2.303,0.405,3.454,0.591C177.056,120.183,195.197,121.646,213.341,121.646z M155.945,39.119   c-7.877,11.939-14.909,26.266-20.864,42.494c-12.079-3.098-24.192-6.921-36.286-11.441   C115.981,56.366,135.297,45.897,155.945,39.119z M74.986,93.039c17.018,7.041,34.136,12.804,51.224,17.259   c-6.813,26.421-11.083,56.267-12.105,88.032H30.612C33.758,159.236,49.167,122.638,74.986,93.039z M30.612,228.33h83.501   c1.041,31.763,5.339,61.594,12.171,87.999c-0.001,0-0.003,0.001-0.004,0.001c-17.117,4.459-34.264,10.238-51.301,17.297   C49.165,304.022,33.758,267.423,30.612,228.33z M98.781,356.482c12.133-4.536,24.286-8.364,36.399-11.472   c0.003-0.001,0.006-0.001,0.009-0.002c5.997,16.291,13.073,30.673,21.009,42.623C135.448,380.853,116.042,370.35,98.781,356.482z    M155.65,309.96c-6.492-24.801-10.476-52.77-11.515-81.63l120.683,0.162c-26.274,18.804-46.479,45.544-57.11,76.719   c-15.447,0.469-34.298,1.859-48.668,4.189C157.91,309.58,156.78,309.77,155.65,309.96z M170.18,351.178   c-1.839-3.939-3.59-8.056-5.253-12.327c0.001,0,0.002,0,0.003,0c10.132-1.608,24.351-2.703,35.732-3.296   c-0.848,6.592-1.287,13.311-1.287,20.134c0,13.254,1.656,26.121,4.761,38.41C192.872,388.206,180.159,372.554,170.18,351.178z    M445.004,445.004C421.147,468.861,389.427,482,355.688,482s-65.459-13.139-89.316-36.996   c-23.857-23.857-36.996-55.577-36.996-89.316s13.139-65.459,36.996-89.316c23.857-23.857,55.577-36.996,89.316-36.996   s65.459,13.139,89.316,36.996C468.861,290.228,482,321.948,482,355.688S468.861,421.147,445.004,445.004z">
+                            </path>
+                            <path
+                                d="M378.022,340.686h-44.67c-4.032,0-7.439-3.407-7.439-7.439s3.407-7.439,7.439-7.439h67.109v-30h-29.704V281.26h-30.001   v14.548h-7.405c-20.645,0-37.439,16.795-37.439,37.439s16.795,37.439,37.439,37.439h44.67c4.032,0,7.439,3.407,7.439,7.439   s-3.407,7.439-7.44,7.439l-67.109,0.003l0.002,30l29.844-0.001v14.466h30v-14.467l7.264,0c20.645,0,37.439-16.795,37.439-37.439   S398.667,340.686,378.022,340.686z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold py-2">Traders and investors</h3>
+                <p class="font-bold text-[13px] text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut
+                    labore
+                    et
+                </p>
+            </div>
+            <div class="w-full">
+                <div class="py-10 bg-[#f6f5f7] flex flex-col justify-center items-center hover:bg-[#30ae69]">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="50" height="50">
+                        <g>
+                            <path
+                                d="M426.674,216.389c-0.002-1.379-0.004-2.631-0.004-3.059C426.67,95.51,331.15,0,213.33,0C95.51,0,0,95.51,0,213.33   s95.51,213.34,213.33,213.34c0.321,0,1.527,0.001,3.058,0.003C242.249,477.32,294.917,512,355.688,512   C442.017,512,512,442.017,512,355.688C512,294.918,477.321,242.25,426.674,216.389z M312.565,198.33   c-1.021-31.76-5.29-61.603-12.102-88.021c17.098-4.457,34.222-10.236,51.219-17.272c25.82,29.599,41.23,66.198,44.375,105.293    M327.876,70.176c-12.086,4.518-24.203,8.335-36.289,11.434c-5.954-16.226-12.985-30.55-20.86-42.488   C291.374,45.902,310.688,56.37,327.876,70.176z M170.18,75.197c12.987-27.821,29.523-45.104,43.155-45.104   s30.168,17.283,43.156,45.104c1.876,4.02,3.658,8.231,5.352,12.597c-32.186,5.123-64.813,5.124-97.014,0   C166.522,83.428,168.303,79.217,170.18,75.197z M213.341,121.646c18.139,0,36.28-1.463,54.288-4.389   c1.152-0.187,2.306-0.39,3.46-0.589c6.475,24.82,10.438,52.799,11.458,81.662H144.124c1.019-28.864,4.982-56.845,11.458-81.665   c1.152,0.199,2.303,0.405,3.454,0.591C177.056,120.183,195.197,121.646,213.341,121.646z M155.945,39.119   c-7.877,11.939-14.909,26.266-20.864,42.494c-12.079-3.098-24.192-6.921-36.286-11.441   C115.981,56.366,135.297,45.897,155.945,39.119z M74.986,93.039c17.018,7.041,34.136,12.804,51.224,17.259   c-6.813,26.421-11.083,56.267-12.105,88.032H30.612C33.758,159.236,49.167,122.638,74.986,93.039z M30.612,228.33h83.501   c1.041,31.763,5.339,61.594,12.171,87.999c-0.001,0-0.003,0.001-0.004,0.001c-17.117,4.459-34.264,10.238-51.301,17.297   C49.165,304.022,33.758,267.423,30.612,228.33z M98.781,356.482c12.133-4.536,24.286-8.364,36.399-11.472   c0.003-0.001,0.006-0.001,0.009-0.002c5.997,16.291,13.073,30.673,21.009,42.623C135.448,380.853,116.042,370.35,98.781,356.482z    M155.65,309.96c-6.492-24.801-10.476-52.77-11.515-81.63l120.683,0.162c-26.274,18.804-46.479,45.544-57.11,76.719   c-15.447,0.469-34.298,1.859-48.668,4.189C157.91,309.58,156.78,309.77,155.65,309.96z M170.18,351.178   c-1.839-3.939-3.59-8.056-5.253-12.327c0.001,0,0.002,0,0.003,0c10.132-1.608,24.351-2.703,35.732-3.296   c-0.848,6.592-1.287,13.311-1.287,20.134c0,13.254,1.656,26.121,4.761,38.41C192.872,388.206,180.159,372.554,170.18,351.178z    M445.004,445.004C421.147,468.861,389.427,482,355.688,482s-65.459-13.139-89.316-36.996   c-23.857-23.857-36.996-55.577-36.996-89.316s13.139-65.459,36.996-89.316c23.857-23.857,55.577-36.996,89.316-36.996   s65.459,13.139,89.316,36.996C468.861,290.228,482,321.948,482,355.688S468.861,421.147,445.004,445.004z">
+                            </path>
+                            <path
+                                d="M378.022,340.686h-44.67c-4.032,0-7.439-3.407-7.439-7.439s3.407-7.439,7.439-7.439h67.109v-30h-29.704V281.26h-30.001   v14.548h-7.405c-20.645,0-37.439,16.795-37.439,37.439s16.795,37.439,37.439,37.439h44.67c4.032,0,7.439,3.407,7.439,7.439   s-3.407,7.439-7.44,7.439l-67.109,0.003l0.002,30l29.844-0.001v14.466h30v-14.467l7.264,0c20.645,0,37.439-16.795,37.439-37.439   S398.667,340.686,378.022,340.686z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold py-2">Traders and investors</h3>
+                <p class="font-bold text-[13px] text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut
+                    labore
+                    et
+                </p>
+            </div>
+            <div class="w-full">
+                <div class="py-10 bg-[#f6f5f7] flex flex-col justify-center items-center hover:bg-[#30ae69]">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="50" height="50">
+                        <g>
+                            <path
+                                d="M426.674,216.389c-0.002-1.379-0.004-2.631-0.004-3.059C426.67,95.51,331.15,0,213.33,0C95.51,0,0,95.51,0,213.33   s95.51,213.34,213.33,213.34c0.321,0,1.527,0.001,3.058,0.003C242.249,477.32,294.917,512,355.688,512   C442.017,512,512,442.017,512,355.688C512,294.918,477.321,242.25,426.674,216.389z M312.565,198.33   c-1.021-31.76-5.29-61.603-12.102-88.021c17.098-4.457,34.222-10.236,51.219-17.272c25.82,29.599,41.23,66.198,44.375,105.293    M327.876,70.176c-12.086,4.518-24.203,8.335-36.289,11.434c-5.954-16.226-12.985-30.55-20.86-42.488   C291.374,45.902,310.688,56.37,327.876,70.176z M170.18,75.197c12.987-27.821,29.523-45.104,43.155-45.104   s30.168,17.283,43.156,45.104c1.876,4.02,3.658,8.231,5.352,12.597c-32.186,5.123-64.813,5.124-97.014,0   C166.522,83.428,168.303,79.217,170.18,75.197z M213.341,121.646c18.139,0,36.28-1.463,54.288-4.389   c1.152-0.187,2.306-0.39,3.46-0.589c6.475,24.82,10.438,52.799,11.458,81.662H144.124c1.019-28.864,4.982-56.845,11.458-81.665   c1.152,0.199,2.303,0.405,3.454,0.591C177.056,120.183,195.197,121.646,213.341,121.646z M155.945,39.119   c-7.877,11.939-14.909,26.266-20.864,42.494c-12.079-3.098-24.192-6.921-36.286-11.441   C115.981,56.366,135.297,45.897,155.945,39.119z M74.986,93.039c17.018,7.041,34.136,12.804,51.224,17.259   c-6.813,26.421-11.083,56.267-12.105,88.032H30.612C33.758,159.236,49.167,122.638,74.986,93.039z M30.612,228.33h83.501   c1.041,31.763,5.339,61.594,12.171,87.999c-0.001,0-0.003,0.001-0.004,0.001c-17.117,4.459-34.264,10.238-51.301,17.297   C49.165,304.022,33.758,267.423,30.612,228.33z M98.781,356.482c12.133-4.536,24.286-8.364,36.399-11.472   c0.003-0.001,0.006-0.001,0.009-0.002c5.997,16.291,13.073,30.673,21.009,42.623C135.448,380.853,116.042,370.35,98.781,356.482z    M155.65,309.96c-6.492-24.801-10.476-52.77-11.515-81.63l120.683,0.162c-26.274,18.804-46.479,45.544-57.11,76.719   c-15.447,0.469-34.298,1.859-48.668,4.189C157.91,309.58,156.78,309.77,155.65,309.96z M170.18,351.178   c-1.839-3.939-3.59-8.056-5.253-12.327c0.001,0,0.002,0,0.003,0c10.132-1.608,24.351-2.703,35.732-3.296   c-0.848,6.592-1.287,13.311-1.287,20.134c0,13.254,1.656,26.121,4.761,38.41C192.872,388.206,180.159,372.554,170.18,351.178z    M445.004,445.004C421.147,468.861,389.427,482,355.688,482s-65.459-13.139-89.316-36.996   c-23.857-23.857-36.996-55.577-36.996-89.316s13.139-65.459,36.996-89.316c23.857-23.857,55.577-36.996,89.316-36.996   s65.459,13.139,89.316,36.996C468.861,290.228,482,321.948,482,355.688S468.861,421.147,445.004,445.004z">
+                            </path>
+                            <path
+                                d="M378.022,340.686h-44.67c-4.032,0-7.439-3.407-7.439-7.439s3.407-7.439,7.439-7.439h67.109v-30h-29.704V281.26h-30.001   v14.548h-7.405c-20.645,0-37.439,16.795-37.439,37.439s16.795,37.439,37.439,37.439h44.67c4.032,0,7.439,3.407,7.439,7.439   s-3.407,7.439-7.44,7.439l-67.109,0.003l0.002,30l29.844-0.001v14.466h30v-14.467l7.264,0c20.645,0,37.439-16.795,37.439-37.439   S398.667,340.686,378.022,340.686z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold py-2">Traders and investors</h3>
+                <p class="font-bold text-[13px] text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut
+                    labore
+                    et
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About crypto -->
+    <div class="container mx-auto flex flex-col justify-center items-center pb-16">
+        <h1 class="py-10 text-4xl font-bold">About Cryptop</h1>
+        <div class="">
+            <img src="/img/about-img.png" alt="">
+        </div>
+        <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore
+            magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+    </div>
+
+    <!-- Our powerful -->
+    <div
+        class="bg-gradient-to-r from-green-500 to-blue-500 grid grid-cols-1 gap-4 mb-16  sm:grid-cols-2 md:grid-cols-2">
+        <div class="px-16 text-white relative">
+            <h1 class="text-4xl font-bold pb-2">Our Powerful app to connect it all</h1>
+            <p class="pb-2 flex-grow mb-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam</p>
+            <div class="flex flex-row absolute inset-x-0 bottom-0 px-16 gap-4">
+                <p>Download Now</p>
+                <img src="/img/app-store.png" alt="">
+                <img src="/img/play-store.png" alt="">
+            </div>
+        </div>
+        <div class="">
+            <img src="/img/slider-img.png" alt="">
+        </div>
+    </div>
+
+    <!-- Start automatic now -->
+    <div class="container mx-auto flex flex-col justify-center items-center pb-16">
+        <h1 class="text-4xl font-bold py-16">Start Automatic Now</h1>
+        <div class="flex flex-col justify-center items-center">
+            <img src="/img/auto-img.png" alt="">
+            <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
+                dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+    <!-- <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold py-16">Testimonial</h1>
+        <div class="flex flex-col">
+            <div class="">
+                <div class=""></div>
+            </div>
+            <div class="">sdfs</div>
+        </div>
+    </div>-->
+
+    <!-- Footer -->
+    <footer class="relative bg-blueGray-200 pt-8 pb-6 bg-black text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Find us on any of these platforms, we respond 1-2 business days.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button
+                            class="bg-white text-black text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button><button
+                            class="bg-white text-black text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button><button
+                            class="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-dribbble"></i></button><button
+                            class="bg-white text-black text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful
+                                Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free
+                                        Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT
+                                        License</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2021</span><a
+                            href="https://www.creative-tim.com/product/notus-js"
+                            class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
+                            <a href="https://www.creative-tim.com?ref=njs-profile"
+                                class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+
+<script>
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        autoplay: true,
+    });
+    splide.mount();
+</script>
+<script>
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function () {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        // close
+        const close = document.querySelectorAll('.navbar-close');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+                backdrop[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    });
+</script>
+
+</html>
